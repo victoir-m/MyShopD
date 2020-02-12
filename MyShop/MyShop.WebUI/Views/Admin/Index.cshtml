@@ -1,0 +1,17 @@
+﻿@{ 
+    ViewBag.Tile = "Admin";
+}
+
+<h2>Admin Pages</h2>
+
+<div class="col-md-6">
+    <h4>Product Management</h4>
+    @Html.ActionLink("Product Categories", "Index", "ProductCategoryManager", null, new { @class = "list-group-item" })
+    @Html.ActionLink("Product", "Index", "ProductManager", null, new { @class = "list-group-item" })
+</div>
+
+<div class="col-md-6">
+    <h4>Order Management</h4>
+    @Html.ActionLink("Orders Categories", "Index", "OrderManager", null, new { @class = "list-group-item" })
+</div>
+<div class="col-md-12 clearfix"></div>
