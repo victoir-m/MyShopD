@@ -10,6 +10,7 @@ using MyShop.WebUI.Models;
 
 namespace MyShop.WebUI.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Authorize]
     public class ManageController : Controller
     {
